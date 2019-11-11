@@ -1,0 +1,102 @@
+body{
+  background: -webkit-linear-gradient(45deg, #8426FF 0%, #008080 100%); /* safari5.1+,chrome10+ */
+  background: -ms-linear-gradient(45deg, #8426FF 0%, #008080 100%); /* ie10+ */
+  background: linear-gradient(45deg, #8426FF 0%, #008080 100%); /* w3c */
+  position: relative;
+  z-index: 1;
+  height:350px;
+  text-align: center;
+  background:url("https://vignette.wikia.nocookie.net/harrypotter/images/3/37/Hogwarts-castle-harry-potter-166431.jpg/revision/latest?cb=20130514141001") no-repeat;
+  background-size: cover;
+  background: rgba(black, 1);
+  overflow: hidden;
+}
+h1{
+  font-size: 3rem;
+  width: 75%;
+  color: #F6F5ED;
+  text-align: left;
+  margin-bottom: -10px;
+}
+p{
+  width: 70%;
+  text-align: left;
+  font-size: 16px;
+  color: #F9EDEB;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    color: #111111;
+}
+li {
+    display:inline;
+}
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #000000;
+}
+.left-inner{
+  float: left;
+  position: static;
+  margin: auto;
+  padding-top: 100px;
+  margin-right: -150px;
+}
+.clone{
+  width: 55%;
+}
+.movie-info{
+  text-align: justify;
+  margin-bottom: -20px;
+}
+.movie-summary{
+  line-height: 1.5;
+}
+.button{
+  background: -moz-linear-gradient(45deg, #FF6B6B 0%, #008080 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #FF6B6B), color-stop(100%, #008080)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, #FF6B6B 0%, #008080 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, #FF6B6B 0%, #008080 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, #FF6B6B 0%, #008080 100%); /* ie10+ */
+  background: linear-gradient(45deg, #FF6B6B 0%, #008080 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#FF6B6B',GradientType=1 ); /* ie6-9 */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover{
+  color: #570000;
+}
+.theaters{
+  color: #a50606;
+}
+.link{
+  color: #0c39db;
+}
+
+.ron{
+  width: 20%;
+  margin-top: -350px;
+  margin-right: -450px;
+}
+
+.hermione{
+  width: 20%;
+  margin-top: -500px;
+  margin-right: -450px;
+}

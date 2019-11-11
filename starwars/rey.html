@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Light Side</title>
+	<link href="css/lightsidecharacters.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4/jquery-ui-1.11.4/jquery-ui.css"> 
+	<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.11.4/jquery-ui-1.11.4/jquery-ui.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1 class="text"><img class="logo" src="images/rebellion.png" name="FirstOrderLogo">&nbsp;You Have Chosen The Light Side&nbsp;<img class="logo" src="images/jediorder.png" name="FirstOrderLogo"></h1>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+	</header>
+	<div class="menu">
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="lightside.html"><li>Light Side</li></a>
+			<a href="darkside.html"><li>Dark Side</li></a>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="row">
+			<ul>
+				<li>
+					<div>
+						<img class="images" src="images/reymain.png" name="Rey">
+					</div>
+				</li>
+				<li class="content">
+					<h2>Rey's Bio</h2>
+					<div>
+						&nbsp;&nbsp;&nbsp;&nbsp;Rey was a human female scavenger who discovered her latent Force-sensitivity while on a journey to find the legendary Jedi Master Luke Skywalker and bring a new hope to a galaxy on the brink of war. Rey grew up alone in the desert wastes of Jakku, longing for her family to return, until she met BB-8, who carried information about Skywalker's whereabouts. Together with Finn, a First Order defector, and BB-8—and with the help of Han Solo and Chewbacca—she journeyed to deliver the map to Skywalker to General Leia Organa and the Resistance. Along the way, she discovered Skywalker's lightsaber and awakened her Force powers before being captured by Kylo Ren, whom she dueled into defeat on Starkiller Base just before the Resistance destroyed the First Order superweapon. After traveling to the Resistance base, Organa tasked her with finding Skywalker and presenting him with his old lightsaber as a symbol of the only hope the galaxy had left: the return of the Jedi.
+						<br /><br />
+						&nbsp;&nbsp;&nbsp;&nbsp;Rey's attempt to reach out to Skywalker was initially unsuccessful, and although he reluctantly agreed to train her, Rey quickly got caught up in a Force-bond with Kylo Ren. The bond, which allowed her to communicate with Kylo telepathically, caused her to question what Skywalker did to Kylo after the latter was tempted by the dark side. She eventually left Ahch-To to sway Ren back to the light. After arriving on Snoke's ship, the Supremacy, she was taken to his throne room where Snoke claimed that he created the bond between Rey and Ren to lure her into a trap. Snoke wanted Rey killed. Although Kylo Ren, conflicted against this order, turned against his master and killed him, he was still entrenched in the dark side and offered Rey the opportunity to join him in ruling the galaxy. Rey refused, and the two briefly struggled, causing Skywalker's lightsaber to be destroyed. Rey escaped and headed to Crait, where she and Chewbacca aided the Resistance by taking out the First Order's TIE fighters in the Falcon. As Skywalker distracted the First Order by projecting himself from Ahch-To, Rey helped the remainder of the Resistance escape and saw Kylo Ren once more before leaving.
+						&nbsp;&nbsp;&nbsp;&nbsp;Rey was a human female scavenger who discovered her latent Force-sensitivity while on a journey to find the legendary Jedi Master Luke Skywalker and bring a new hope to a galaxy on the brink of war. Rey grew up alone in the desert wastes of Jakku, longing for her family to return, until she met BB-8, who carried information about Skywalker's whereabouts. Together with Finn, a First Order defector, and BB-8—and with the help of Han Solo and Chewbacca—she journeyed to deliver the map to Skywalker to General Leia Organa and the Resistance. Along the way, she discovered Skywalker's lightsaber and awakened her Force powers before being captured by Kylo Ren, whom she dueled into defeat on Starkiller Base just before the Resistance destroyed the First Order superweapon. After traveling to the Resistance base, Organa tasked her with finding Skywalker and presenting him with his old lightsaber as a symbol of the only hope the galaxy had left: the return of the Jedi.
+						<br /><br />
+				
+					</div>
+				</li>
+			</ul>	
+		</div>
+		<div class="banner">
+			<ul>
+				<li>
+					<div id="video">
+						<a href="https://www.youtube.com/embed/Q0CbN8sfihY?rel=0&autoplay=1" alt="The Last Jedi Trailer" target="_blank">				
+							<img class="reybanner" id="reyimage" src="images/reybanner.jpg" name="Rey">
+						</a>		
+					</div>
+					<!-- <div class="modal" id="modal">
+						<div id="dialog8" title="Star Wars: The Last Jedi Trailer (Official)" style="display:none;">
+							<iframe height="750px" width="1200px" src="https://www.youtube.com/embed/watch?v=Q0CbN8sfihY?rel=0&autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>			
+						</div>
+					</div> -->
+				</li>
+			</ul>
+		</div>
+		<div class="video">
+			<ul>
+				<li class="reyvideo">
+					<h2>Rey's Backstory</h2>
+					<div>
+						<iframe width="900" height="600" src="https://www.youtube.com/embed/Gqv6L4CNflg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>				
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+	$( document ).ready(function() {
+		$( ".cross" ).hide();
+		$( ".menu" ).hide();
+		$( ".hamburger" ).click(function() {
+			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".hamburger" ).hide();
+				$( ".cross" ).show();
+			});
+		});
+		$( ".cross" ).click(function() {
+			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
+		});
+	});
+	
+	$( document ).ready(function() {
+		$("#video").button();
+		$("#video").on("click", function()
+		{
+			$("#dialog8").dialog( 
+			{
+				modal: true	
+			});
+		})
+	});
+	
+	</script>
+	<footer>
+		<p>Posted by: Zenki Thao</p>
+		<p>Contact information: <a href="mailto:zenkithao@yahoo.com" class="footer">zenkithao@yahoo.com</a></p>
+		<p>Copyright &copy;2018</p>
+		<img class="kvr" src="images/kylovsrey.jpg" name="Kylo vs Rey">
+	</footer>
+	<p></p>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Dark Side</title>
+	<link href="css/darkside.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1 class="text"><img class="logo" src="images/firstorderlogo.png" name="FirstOrderLogo">&nbsp;You Have Chosen The Dark Side&nbsp;<img class="logo" src="images/sithempire.png" name="FirstOrderLogo"></h1>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+	</header>
+	<div class="menu">
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="lightside.html"><li>Light Side</li></a>
+			<a href="darkside.html"><li>Dark Side</li></a>
+		</ul>
+	</div>
+	<div class="header">
+		<iframe height="890px" width="100%"src="https://www.youtube.com/embed/TV6sjwqCQ2M?rel=0&autoplay=1&loop=1&playlist=TV6sjwqCQ2M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+	</div>
+	<div class="container">
+			<h2>Dark Side Characters</h2>
+		<div class="row">
+			<ul>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/kyloren.png" name="Kylo Ren">
+							<h3>Kylo Ren</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/snoke.png" name="Snoke">
+							<h3>Snoke</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/generalhux.png" name="General Hux">
+							<h3>General Hux</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/captainphasma.png" name="Captain Phasma">
+							<h3>Captain Phasma</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/darthvadermask.gif" name="Darth Vader's Mask">
+							<h3>Darth Vader's Mask</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/stormtroppers.png" name="Storm Topper">
+							<h3>Storm Tropper</h3>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+	$( document ).ready(function() {
+		$( ".cross" ).hide();
+		$( ".menu" ).hide();
+		$( ".hamburger" ).click(function() {
+			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".hamburger" ).hide();
+				$( ".cross" ).show();
+			});
+		});
+		$( ".cross" ).click(function() {
+			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
+		});
+	});
+	</script>
+	<footer>
+		<p>Posted by: Zenki Thao</p>
+		<p>Contact information: <a href="mailto:zenkithao@yahoo.com" class="footer">zenkithao@yahoo.com</a></p>
+		<p>Copyright &copy;2018</p>
+	</footer>
+	<p></p>
+</body>
+</html>

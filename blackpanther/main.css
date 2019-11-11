@@ -1,0 +1,90 @@
+body{
+  background: -webkit-linear-gradient(45deg, #8426FF 0%, #008080 100%); /* safari5.1+,chrome10+ */
+  background: -ms-linear-gradient(45deg, #8426FF 0%, #008080 100%); /* ie10+ */
+  background: linear-gradient(45deg, #8426FF 0%, #008080 100%); /* w3c */
+  position: relative;
+  z-index: 1;
+  height:350px;
+  text-align: center;
+  background-image: url("images/wakanda.jpg");
+  /*   
+    background:url("http://thenerdstash.com/wp-content/uploads/2018/02/black-panther-599d9721c6235.jpg") no-repeat;
+  */
+  background-size: cover;
+  background: rgba(black, 1);
+  overflow: hidden;
+}
+h1{
+  font-size: 5rem;
+  width: 75%;
+  color: #040404;
+  text-align: left;
+  margin-bottom: -10px;
+}
+p{
+  width: 70%;
+  text-align: left;
+  font-size: 16px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    opacity: .9;
+}
+li {
+    display:inline;
+}
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.left-inner{
+  float: left;
+  position: static;
+  margin: auto;
+  padding-top: 100px;
+}
+.clone{
+  width: 70%;
+  height: 100%;
+}
+.movie-info{
+  text-align: justify;
+  margin-bottom: -20px;
+}
+.movie-summary{
+  line-height: 1.5;
+}
+.button{
+  background: -moz-linear-gradient(45deg, #7E29FF 0%, #008080 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #7E29FF), color-stop(100%, #008080)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, #7E29FF 0%, #008080 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, #7E29FF 0%, #008080 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, #7E29FF 0%, #008080 100%); /* ie10+ */
+  background: linear-gradient(45deg, #7E29FF 0%, #008080 100%); /* w3c */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover{
+}
+.theaters{
+  color: #a50606;
+}
+.link{
+  color: #0c39db;
+}

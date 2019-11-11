@@ -1,0 +1,161 @@
+html, body {
+	background-color: #333333;
+	padding:0;
+	margin:0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.header{
+	background-size: cover;
+	background-position: center;
+	display: block;
+    margin: 6em;
+}
+
+.logo{
+	width: 3%;
+	height: 50%;
+}
+
+h1{
+	font-size: 5rem;
+	color: #b40002;
+}
+
+h2{
+	font-size: 3rem;
+	color: #d5bf7b;
+	text-decoration: underline;
+}
+
+.text{
+	margin: auto;
+	width: 100%;
+	height: 6rem;
+	text-align: center;
+	position: absolute;
+	background: rgba(0,0,0,0.75);
+}
+
+.container{
+	text-align: center;
+	position: static;
+	width: 1500px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.row{
+	width: 1500px;
+	display: table;
+	margin: auto;
+}
+
+div.row ul, div.row ul li{
+	float: left;
+	padding: 0;
+	margin: 2em;
+	list-style-type: none;
+}
+
+div.row ul{
+}
+
+div.row ul li{
+	width: 26%;
+	margin-bottom: 30px;
+	padding: 1em;
+}
+
+div.row ul li div.row{
+	width: 90%;
+	margin-left: 5%;
+}
+
+.images{
+	object-fit: scale-down;
+	position: static;
+	width: 340px;
+	height: 615px;
+}
+
+a{
+	font-size: 25px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.footer{
+	color: #333333;
+	font-size: 18px;
+}
+
+a.footer:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a.image:hover {
+	color: #b40002;
+	text-decoration: underline;
+}
+
+footer{
+	width: 100%;
+	background-color: black;
+	padding: 2em;
+	color: #333333;
+}
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  height: 6rem;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  height: 6rem;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:15%; background: rgba(0,0,0,0.75); position:absolute; text-align:center; font-size:12px; margin-top: 8em; right: 0;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block; padding: 15px 0 15px 0; background-color: #000000;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#feea3e;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+  height: 6rem;
+}

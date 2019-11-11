@@ -1,0 +1,179 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Light Side</title>
+	<link href="css/lightside.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1 class="text"><img class="logo" src="images/rebellion.png" name="FirstOrderLogo">&nbsp;You Have Chosen The Light Side&nbsp;<img class="logo" src="images/jediorder.png" name="FirstOrderLogo"></h1>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+	</header>
+	<div class="menu">
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="lightside.html"><li>Light Side</li></a>
+			<a href="darkside.html"><li>Dark Side</li></a>
+		</ul>
+	</div>
+	<div class="header">
+		<iframe height="890px" width="100%" src="https://www.youtube.com/embed/j3XZiJyePEI?rel=0&autoplay=1;start=130&loop=1&playlist=j3XZiJyePEI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+	</div>
+	<div class="container">
+			<h2>Light Side Characters</h2>
+		<div class="row">
+			<ul>
+				<li>
+					<div>
+						<a href="rey.html" class="image">
+							<img class="images" src="images/rey.png" name="Rey">
+							<h3>Rey</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/finn.png" name="Finn">
+							<h3>Finn</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/poe.png" name="Poe Dameron">
+							<h3>Poe Dameron</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/luke.png" name="Luke Skywalker">
+							<h3>Luke Skywalker</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/hansolo.png" name="Han Solo">
+							<h3>Han Solo</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/yoda.png" name="Yoda">
+							<h3>Yoda</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/chewy.png" name="Chewbacca">
+							<h3>Chewbacca</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/princessleia.png" name="Princess Leia">
+							<h3>Princess Leia</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/rose.png" name="Rose Tico">
+							<h3>Rose Tico</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/lieutenantconnix.jpg" name="Lieutenant Connix">
+							<h3>Lieutenant Connix</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/c3po.png" name="C-3P0">
+							<h3>C-3P0</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/r2d2.png" name="R2-D2">
+							<h3>R2-D2</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/bb8.png" name="BB-8">
+							<h3>BB-8</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/mazkanata.png" name="Maz Kanata">
+							<h3>Maz Kanata</h3>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="url" class="image">
+							<img class="images" src="images/viceadmiralholdo.png" name="Vice Admiral Holdo">
+							<h3>Vice Admiral Holdo</h3>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+	$( document ).ready(function() {
+		$( ".cross" ).hide();
+		$( ".menu" ).hide();
+		$( ".hamburger" ).click(function() {
+			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".hamburger" ).hide();
+				$( ".cross" ).show();
+			});
+		});
+		$( ".cross" ).click(function() {
+			$( ".menu" ).slideToggle( "slow", function() {
+				$( ".cross" ).hide();
+				$( ".hamburger" ).show();
+			});
+		});
+	});
+	</script>
+	<footer>
+		<p>Posted by: Zenki Thao</p>
+		<p>Contact information: <a href="mailto:zenkithao@yahoo.com" class="footer">zenkithao@yahoo.com</a></p>
+		<p>Copyright &copy;2018</p>
+	</footer>
+	<p></p>
+</body>
+</html>
